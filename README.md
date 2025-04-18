@@ -1,14 +1,24 @@
 # X Feed Customizer
 
+<img src="images/icon128.png" alt="X Feed Customizer Icon" width="128" height="128">
+
 A Chrome extension that helps you filter your X (formerly Twitter) feed based on content topics.
 
 ## Features
 
 - **Topic-Based Filtering**: Show only posts from topics you're interested in
 - **Visual Topic Indicators**: See what category each post belongs to with color-coded labels
-- **Flexible Classification**: Choose between keyword-based classification (offline, no API key needed) or LLM-powered classification (higher accuracy)
+- **LLM-Powered Classification**: Uses OpenAI or DeepSeek models to accurately categorize posts
 - **Customizable Settings**: Enable/disable specific topics to create your ideal feed
 - **Lightweight**: Minimal impact on browsing performance
+
+## Screenshots
+
+### Extension Popup
+![Extension Popup](screenshots/extension_popup.png)
+
+### X Feed with Topic Labels
+![X Feed with Labels](screenshots/x_feed_labels.png)
 
 ## Installation
 
@@ -26,23 +36,22 @@ A Chrome extension that helps you filter your X (formerly Twitter) feed based on
 
 1. Click the extension icon to open the settings panel
 2. Enable/disable topics you want to see in your feed
-3. Choose between keyword-based or LLM-based classification (LLM requires an API key)
+3. Enter your OpenAI or DeepSeek API key
 4. Click "Apply" to save your settings
 5. Browse X with a cleaner, more focused feed
 
 ## Classification Methods
 
-### Keyword-Based (Default)
-- Works completely offline
-- No API key required
-- Moderate accuracy
-- Zero cost
-
-### LLM-Based (Optional)
+### Current: LLM-Based Classification
 - Requires an OpenAI or DeepSeek API key
-- Higher accuracy for topic classification
+- High accuracy for topic classification
 - Handles nuanced content better
 - Incurs API usage costs
+
+### Future Release: Keyword-Based Classification
+- Will work completely offline
+- No API key will be required
+- Zero cost solution
 
 ## Available Topics
 
@@ -73,7 +82,6 @@ A Chrome extension that helps you filter your X (formerly Twitter) feed based on
 This extension:
 - Does not collect any personal data
 - Does not track your browsing history
-- When using keyword classification, no data leaves your browser
 - When using LLM classification, post text is sent to the selected API provider
 
 ## Contributing
