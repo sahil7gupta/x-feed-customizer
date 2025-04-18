@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>X Feed Customizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>X Feed Customizer</h1>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="extension-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+        <span>Enable Extension</span>
+      </div>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="indicator-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+        <span>Show Topic Indicators</span>
+      </div>
+    </header>
+
+    <div class="topics-section">
+      <h2>Show posts from these topics:</h2>
+      <div class="topics-grid">
+        <label><input type="checkbox" id="topic-technology" checked> Technology</label>
+        <label><input type="checkbox" id="topic-ai-ml" checked> AI/ML</label>
+        <label><input type="checkbox" id="topic-science" checked> Science</label>
+        <label><input type="checkbox" id="topic-business" checked> Business</label>
+        <label><input type="checkbox" id="topic-startups" checked> Startups</label>
+        <label><input type="checkbox" id="topic-crypto" checked> Crypto</label>
+        <label><input type="checkbox" id="topic-politics" checked> Politics</label>
+        <label><input type="checkbox" id="topic-world-news" checked> World News</label>
+        <label><input type="checkbox" id="topic-health" checked> Health</label>
+        <label><input type="checkbox" id="topic-education" checked> Education</label>
+        <label><input type="checkbox" id="topic-art-design" checked> Art/Design</label>
+        <label><input type="checkbox" id="topic-gaming" checked> Gaming</label>
+        <label><input type="checkbox" id="topic-food" checked> Food</label>
+        <label><input type="checkbox" id="topic-travel" checked> Travel</label>
+        <label><input type="checkbox" id="topic-entertainment"> Entertainment</label>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h2>Classification Method</h2>
+      <div class="api-selection">
+        <label>
+          <input type="radio" name="classification-method" value="keywords" checked> Keywords
+        </label>
+        <label>
+          <input type="radio" name="classification-method" value="api"> LLM API
+        </label>
+      </div>
+      <div class="api-section" style="display: none;">
+        <h3>LLM API Configuration</h3>
+        <div class="api-selection">
+          <label>
+            <input type="radio" name="api-provider" value="openai" checked> OpenAI
+          </label>
+          <label>
+            <input type="radio" name="api-provider" value="deepseek"> DeepSeek
+          </label>
+        </div>
+        <div class="api-key-input">
+          <label for="api-key">API Key:</label>
+          <input type="password" id="api-key" placeholder="Enter your API key">
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="apply-btn" class="primary-btn">Apply</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <footer>
+      <p>X Feed Customizer v1.0</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
